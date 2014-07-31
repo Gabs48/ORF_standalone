@@ -507,10 +507,6 @@ int ORF::saveRectifiedOrf()
 	ssv.str("");
 	ssc.str("");
 	
-	imshow("D", depthNewImageFrame);
-	imshow("V", visualNewImageFrame);
-	imshow("C", confidenceNewImageFrame);
-	
 	try {
 		imwrite(filenamed, depthNewImageFrame);
 		imwrite(filenamev, visualNewImageFrame);

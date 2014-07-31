@@ -51,13 +51,6 @@ int main(int argc, char **argv) {
 		retVal = orf.saveRectifiedOrf();
 		if (retVal!=0)
 			break;
-		
-		// Handle ESC
-		int c = cvWaitKey(1);
-		if(c == 27) {
-			DEBUG<<"Acquisition has been stopped by user"<<endl;
-			break;
-		}
  	}
  	
  	// Close cameras

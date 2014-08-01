@@ -169,7 +169,7 @@ int ORF::captureOrf(Mat& depthNewImageFrame, Mat& visualNewImageFrame, Mat& conf
 	}
 
 	// Points array
-	retVal = SR_CoordTrfFlt (orfCam_, xp_, yp_, zp_, sizeof (float), sizeof (float), sizeof (float));  
+	//retVal = SR_CoordTrfFlt (orfCam_, xp_, yp_, zp_, sizeof (float), sizeof (float), sizeof (float));  
 
 	// Fill the pictures
 	Mat depth(ORF_ROWS, ORF_COLS, CV_16U, SR_GetImage (orfCam_, 0));

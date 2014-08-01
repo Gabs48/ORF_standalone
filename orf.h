@@ -36,7 +36,6 @@
 #include <signal.h>
 #include <sys/stat.h>
 
-
 // Project libs
 #include "utils.h"
 

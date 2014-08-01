@@ -109,7 +109,7 @@ class ORF {
 		Mat mapx;
 		Mat mapy;
 		
-		// Other
+		// File save parameters
 		ofstream tsfile;
 		string timestamps;
 		int imgNum;

@@ -132,13 +132,15 @@ int ORF::closeOrf()
 		tsfile.close();
 	}
 	
-	// 
+	// Close camera
 	if (orfCam_)
 		if (SR_Close (orfCam_))
 			DEBUG<<"Unable to close the camera!"<<endl;
 
 	// Free resources
 	SafeCleanup();
+	
+	INFO<<"ORF camera has been closed"<<endl;
 
 	return 0;
 }
